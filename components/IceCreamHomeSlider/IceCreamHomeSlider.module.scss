@@ -1,0 +1,34 @@
+.buttonNext,
+.buttonPrev {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border-bottom: 3px solid var(--grey);
+	transition: all 0.3s ease 0s;
+	background-color: transparent;
+
+	svg {
+		fill: var(--grey);
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: var(--primary);
+
+		svg {
+			fill: var(--white);
+		}
+	}
+}
+
+.buttonPrev {
+	margin-right: 7px;
+
+	svg {
+		transform: rotate(-135deg);
+	}
+}
+
+.buttonNext svg {
+	transform: rotate(45deg);
+}

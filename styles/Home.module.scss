@@ -2,3 +2,42 @@
   padding: 55px 0;
   text-align: center;
 }
+
+.title {
+	margin-bottom: 7px;
+	color: var(--darken);
+	font-size: 42px;
+	letter-spacing: 0.3px;
+	font-weight: 300;
+}
+
+.sliderBlock {
+	padding-top: 30px;
+	text-align: center;
+
+	.subTitle {
+		 letter-spacing: 0.1em;
+		 color: var(--primary);
+		 text-transform: uppercase;
+		 margin-bottom: 18px;
+		 font-size: 22px;
+		 font-weight: 600;
+	}
+	
+	.phone {
+		color: var(--primary);
+		letter-spacing: 2.5px;
+		font-size: 46px;
+		font-weight: 300;
+		margin-bottom: 60px;
+	
+		span {
+			color: var(--brown-light);
+		}
+	}
+}
+
+.advantageBlock {
+	padding-top: 30px;
+	text-align: center;
+}

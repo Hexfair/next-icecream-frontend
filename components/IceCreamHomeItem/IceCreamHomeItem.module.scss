@@ -1,0 +1,91 @@
+.item {
+	width: 220px;
+	position: relative;
+	border-radius: 6px;
+	text-align: center;
+	transition: all 0.3s ease;
+	padding-bottom: 40px;
+
+	&::before {
+		content: '';
+		position: relative;
+		display: block;
+		width: 30px;
+		height: 4px;
+		background: var(--primary);
+		left: 50%;
+		margin-left: -15px;
+		top: 0;
+	}
+
+	&:hover {
+		background-color: var(--primary);
+
+		.image {
+			transform: rotate(12deg);
+		}
+
+		.icecreamName,
+		.icecreamDescription,
+		.readMore {
+			color: var(--white);
+		}
+
+		.line {
+			background-position: 0 -3px;
+		}
+	}
+}
+
+.image {
+	margin-top: 20px;
+	margin-bottom: 26px;
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+
+.icecreamName {
+	display: inline-block;
+	margin-bottom: 10px;
+   font-weight: 700;
+	font-size: 24px;
+	color: var(--primary);
+   letter-spacing: .05em;
+
+	&:hover {
+		color: var(--darken) !important;
+	}
+}
+
+.icecreamDescription {
+	padding: 0 17px;
+   transition: all 0.3s ease;
+	letter-spacing: .025em;
+	color: var(--brown-light);
+}
+
+.line {
+	display: block;
+   width: 104px;
+   border: none;
+   height: 3px;
+   background: url('/icons/line.png') repeat-x left 0;
+   margin: 17px auto 18px;
+}
+
+.readMore {
+	display: inline-block;
+   font-weight: 600;
+	font-size: 14px;
+   color: var(--brown-light);
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+	background-color: transparent;
+
+	&:hover {
+		color: var(--darken) !important;
+	}
+}
